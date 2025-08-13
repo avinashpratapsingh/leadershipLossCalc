@@ -23,3 +23,15 @@ export interface LeadData {
   annualRevenue: string;
   companySize: string;
 }
+
+export interface UserProblem {
+  id: string;
+  text: string;
+  category: string;
+}
+
+export interface ProblemMapping {
+  userProblem: UserProblem;
+  suggestedGaps: number[];
+  explanation: string;
+}
