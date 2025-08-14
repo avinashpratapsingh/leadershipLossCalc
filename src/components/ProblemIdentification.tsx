@@ -72,7 +72,8 @@ const ProblemIdentification: React.FC<ProblemIdentificationProps> = ({ onNext })
               {problems.map((problem) => (
                 <label
                   key={problem.id}
-                 onClick={() => toggleProblem(problem.id)}
+                 Confirm the Leadership Gaps We Should Assess
+}
                   className={`flex items-start space-x-3 p-4 rounded-lg border-2 cursor-pointer transition-all duration-200 hover:shadow-md ${
                     selectedProblems.includes(problem.id)
                       ? 'border-blue-500 bg-blue-50'
