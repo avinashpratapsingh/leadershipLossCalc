@@ -111,7 +111,8 @@ const ProblemAnalysis: React.FC<ProblemAnalysisProps> = ({
                 confirmedMappings.includes(mapping.userProblem.id)
                   ? 'border-green-500 bg-green-50'
                   : 'border-gray-200 hover:border-gray-300'
-              }`}>
+              }`}
+              onClick={() => toggleMapping(mapping.userProblem.id)}>
                 <div className={`w-5 h-5 rounded border-2 flex items-center justify-center ${
                   confirmedMappings.includes(mapping.userProblem.id)
                     ? 'border-green-500 bg-green-500'
